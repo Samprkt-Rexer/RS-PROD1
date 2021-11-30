@@ -1,10 +1,11 @@
 import React from 'react'
-import { Card, ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Card, ListGroup, ListGroupItem, CardGroup } from 'react-bootstrap'
 
 const card = () => {
     return (
         <>
-            <Card className="d-flex justify-content-center" style={{ width: '18rem', }}>
+        <CardGroup style={{ margin: '50px 350px'}}>
+            <Card className="d-flex justify-content-center" style={{ width: '18rem' }}>
                 <Card.Img variant="top" src="https://static.remove.bg/remove-bg-web/a76316286d09b12be1ebda3b400e3f44716c24d0/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg?text=Image cap" />
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
@@ -23,6 +24,7 @@ const card = () => {
                     <Card.Link href="#">Another Link</Card.Link>
                 </Card.Body>
             </Card>
+            </CardGroup>
         </>
     )
 }
