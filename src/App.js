@@ -2,14 +2,22 @@ import './App.css';
 import {useState} from 'react'
 
 const App =() => {
- const [ like, setLike]= useState(0);
+ const [ password, setPassword]= useState('');
+ const [ email, setEmail]= useState('');
   return (
     <>
-    <div>{like}</div>
-    {
-      console.log({like})
-    }
-    <i class="bi bi-hand-thumbs-up" onClick={() => setLike(like+1)}></i>
+    <input
+    name="email" 
+    value={email}
+    onChange={e=>setEmail(e.target.value)}
+    
+    />
+    <input
+    name="password" 
+    value={password}
+    type='password'
+    onChange={e=>setPassword(e.target.value)}
+    />
     </>
   );
 }
